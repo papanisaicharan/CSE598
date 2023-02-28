@@ -25,7 +25,7 @@ Transformations, such as horizontal flipping and normalization, are applied to t
 
 Later, we tested our model on the test set, which consists of 10,000 images, and achieved an accuracy of 98.0800%.
 
-Next, we needed adversarial samples to use when performing defence using the cowboy defence. So, we used the FSGM attack (Foolbox library) and created adversarial samples using the test set. These adversarial samples were stored in pickle files and were later used to directly load the images.
+Next, we needed adversarial samples to use when performing defence using the cowboy defence. So, we used the FSGM attack (Foolbox library) and created adversarial samples using the test set. These adversarial samples were stored in pickle files and were later used to directly load the images. (The pickle file is not present in this repository because of size limitation. If you need the pickle that we got please download it from https://drive.google.com/file/d/1-5wPa9ELyCFtKfOlZPzV3arlRCDH84nZ/view?usp=share_link)
 
 
 We then built the GAN, specifically DCGAN, which consists of the generator and discriminator. It was trained using the original dataset by applying similar transformations described above. We used the Adam optimizer, binary cross-entropy loss function, and the following parameters:
